@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>
       Todo App
@@ -9,22 +9,22 @@
     <script src="app.js" defer ></script>
   </head>
   <body class="page">
-    <div class="wrapper-header">
-      <img class="header-image" src="./eisenhower-matrix.jpg">
+    <header class="wrapper-header">
+      <img class="header-image" src="./eisenhower-matrix.jpg" >
       <a class="more-inf" href="https://goal-life.com/page/method/matrix-eisenhower">
         Want more details?;
       </a>
-    </div>
-    <div class="wrapper">
-      <p>
+    </header>
+    <main class="wrapper">
+      <section>
         <label for="new-task">
           Add Item
         </label>
         <div class="task-row-wrapper">
           <input id="new-task" class="task" type="text">
-          <button>Add</button>
+          <button type="button">Add</button>
         </div>
-      </p>
+      </section>
       <h3>Todo</h3>
       <ul id="incomplete-tasks">
         <li>
@@ -33,9 +33,9 @@
             Pay Bills
           </label>
           <input type="text" class="task">
-          <button class="edit">Edit</button>
-          <button class="delete">
-            <img src="./remove.svg">
+          <button type="button" class="edit">Edit</button>
+          <button type="button" class="delete">
+            <img src="./remove.svg" >
           </button>
         </li>
         <li class="edit-mode">
@@ -44,9 +44,9 @@
             Go Shopping
           </label>
           <input type="text" value="Go Shopping" class="task">
-          <button class="edit">Save</button>
-          <button class="delete">
-            <img src="./remove.svg">
+          <button type="button" class="edit">Save</button>
+          <button type="button" class="delete">
+            <img src="./remove.svg" >
           </button>
         </li>
       </ul>
@@ -58,14 +58,12 @@
             See the Doctor
           </label>
           <input type="text" class="task">
-          <button class="edit">
-            Edit
-          </button>
-          <button class="delete">
-            <img src="./remove.svg">
+          <button type="button" class="edit">Edit</button>
+          <button type="button" class="delete">
+            <img src="./remove.svg" >
           </button>
         </li>
       </ul>
-    </div>
+    </main>
   </body>
 </html>
